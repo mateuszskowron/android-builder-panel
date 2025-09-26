@@ -52,5 +52,45 @@
       "headline": "Sekcja {name}",
       "description": "Ta sekcja jest przygotowana do wdrożenia. Napisz, abyśmy wygenerowali pełną funkcjonalność."
     }
+  },
+  "invoices": {
+    "issue": "Wystawiono",
+    "due": "Termin",
+    "amount": "Kwota",
+    "status": {
+      "paid": "Opłacona",
+      "pending": "Oczekuje",
+      "overdue": "Po terminie"
+    }
+  },
+  "documents": {
+    "name": "Nazwa",
+    "type": "Typ",
+    "size": "Rozmiar",
+    "modified": "Zmodyfikowano"
+  },
+  "payments": {
+    "method": "Metoda",
+    "method_card": "Karta",
+    "method_transfer": "Przelew",
+    "method_blik": "BLIK",
+    "status_success": "Sukces",
+    "status_failed": "Niepowodzenie",
+    "status_processing": "Przetwarzanie"
+  },
+  "complaints": {
+    "created": "Utworzono",
+    "status_new": "Nowa",
+    "status_in_review": "W analizie",
+    "status_resolved": "Zamknięta"
+  },
+  "settings": {
+    "language": "Język interfejsu",
+    "dark": "Tryb ciemny",
+    "notifications": "Powiadomienia",
+    "save": "Zapisz ustawienia"
+  },
+  "account": {
+    "memberSince": "Członek od"
   }
 }
