@@ -1,18 +1,34 @@
-import { Component, effect, inject, signal } from '@angular/core';
-import { CommonModule, NgOptimizedImage } from '@angular/common';
-import { FormsModule, ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
-import { Router, RouterLink } from '@angular/router';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { AuthController } from '../../controllers/auth.controller';
+import { Component, effect, inject, signal } from "@angular/core";
+import { CommonModule, NgOptimizedImage } from "@angular/common";
+import {
+  FormsModule,
+  ReactiveFormsModule,
+  FormBuilder,
+  Validators,
+} from "@angular/forms";
+import { Router, RouterLink } from "@angular/router";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
+import { MatButtonModule } from "@angular/material/button";
+import { MatCheckboxModule } from "@angular/material/checkbox";
+import { TranslateModule, TranslateService } from "@ngx-translate/core";
+import { AuthController } from "../../controllers/auth.controller";
 
 @Component({
-  selector: 'app-login-page',
+  selector: "app-login-page",
   standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterLink, MatFormFieldModule, MatInputModule, MatButtonModule, MatCheckboxModule, TranslateModule, NgOptimizedImage],
+  imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterLink,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    TranslateModule,
+    NgOptimizedImage,
+  ],
   template: `
   <a class="sr-only focus:not-sr-only focus:absolute focus:m-4 focus:p-2 focus:bg-white focus:shadow" href="#main">{{ 'app.skip_to_content' | translate }}</a>
   <div class="min-h-screen grid grid-cols-1 lg:grid-cols-2">
@@ -55,9 +71,9 @@ export class LoginPageComponent {
   private router = inject(Router);
 
   form = this.fb.group({
-    email: ['', [Validators.required, Validators.email]],
-    password: ['', Validators.required],
-    remember: [true]
+    email: ["", [Validators.required, Validators.email]],
+    password: ["", Validators.required],
+    remember: [true],
   });
 
   error = signal(false);
@@ -66,7 +82,7 @@ export class LoginPageComponent {
     const { email, password } = this.form.getRawValue();
     if (this.auth.login(String(email), String(password))) {
       this.error.set(false);
-      this.router.navigateByUrl('/');
+      this.router.navigateByUrl("/");
     } else {
       this.error.set(true);
     }

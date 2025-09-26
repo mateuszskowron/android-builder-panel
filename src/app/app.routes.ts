@@ -1,16 +1,14 @@
-import { Routes } from '@angular/router';
-import { pluginRoutes } from '../plugins/plugins';
-import { LoginPageComponent } from '../sections/auth/login.page';
-import { authGuard } from './auth.guard';
+import { Routes } from "@angular/router";
+import { pluginRoutes } from "../plugins/plugins";
+import { LoginPageComponent } from "../sections/auth/login.page";
+import { authGuard } from "./auth.guard";
 
 export const routes: Routes = [
-  { path: 'login', component: LoginPageComponent },
+  { path: "login", component: LoginPageComponent },
   {
-    path: '',
+    path: "",
     canActivate: [authGuard],
-    children: [
-      ...pluginRoutes
-    ]
+    children: [...pluginRoutes],
   },
-  { path: '**', redirectTo: '' }
+  { path: "**", redirectTo: "" },
 ];

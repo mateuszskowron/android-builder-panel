@@ -1,4 +1,4 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, signal } from "@angular/core";
 
 export interface User {
   id: string;
@@ -6,9 +6,9 @@ export interface User {
   email: string;
 }
 
-@Injectable({ providedIn: 'root' })
+@Injectable({ providedIn: "root" })
 export class AuthController {
-  private readonly key = 'app_auth_user';
+  private readonly key = "app_auth_user";
   user = signal<User | null>(null);
 
   constructor() {
@@ -18,8 +18,8 @@ export class AuthController {
 
   login(email: string, password: string) {
     // Mock check
-    if (email.toLowerCase() === 'demo@panel.app' && password === 'demo123') {
-      const u: User = { id: 'u1', name: 'Demo User', email };
+    if (email.toLowerCase() === "demo@panel.app" && password === "demo123") {
+      const u: User = { id: "u1", name: "Demo User", email };
       this.user.set(u);
       localStorage.setItem(this.key, JSON.stringify(u));
       return true;
@@ -32,5 +32,7 @@ export class AuthController {
     localStorage.removeItem(this.key);
   }
 
-  isAuthenticated() { return !!this.user(); }
+  isAuthenticated() {
+    return !!this.user();
+  }
 }

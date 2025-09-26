@@ -1,15 +1,19 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, signal } from "@angular/core";
 
 export interface AppSettings {
-  language: 'pl' | 'en';
+  language: "pl" | "en";
   darkMode: boolean;
   notifications: boolean;
 }
 
-@Injectable({ providedIn: 'root' })
+@Injectable({ providedIn: "root" })
 export class SettingsController {
-  private readonly key = 'app_settings';
-  settings = signal<AppSettings>({ language: (localStorage.getItem('lang') as 'pl'|'en') || 'pl', darkMode: false, notifications: true });
+  private readonly key = "app_settings";
+  settings = signal<AppSettings>({
+    language: (localStorage.getItem("lang") as "pl" | "en") || "pl",
+    darkMode: false,
+    notifications: true,
+  });
 
   constructor() {
     const raw = localStorage.getItem(this.key);

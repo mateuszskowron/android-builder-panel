@@ -1,4 +1,4 @@
-import { PluginDef } from './plugin.types';
+import { PluginDef } from "./plugin.types";
 
 const plugins: PluginDef[] = [];
 

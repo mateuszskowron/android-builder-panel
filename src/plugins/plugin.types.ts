@@ -1,19 +1,19 @@
-import { Route } from '@angular/router';
+import { Route } from "@angular/router";
 
 export type PluginId =
-  | 'home'
-  | 'cases'
-  | 'invoices'
-  | 'calendar'
-  | 'messages'
-  | 'documents'
-  | 'payments'
-  | 'complaints'
-  | 'reports'
-  | 'settings'
-  | 'account'
-  | 'integrations'
-  | 'support';
+  | "home"
+  | "cases"
+  | "invoices"
+  | "calendar"
+  | "messages"
+  | "documents"
+  | "payments"
+  | "complaints"
+  | "reports"
+  | "settings"
+  | "account"
+  | "integrations"
+  | "support";
 
 export interface PluginDef {
   id: PluginId;
