@@ -1,0 +1,56 @@
+{
+  "app": {
+    "title": "Customer Portal",
+    "logout": "Log out",
+    "language": "Language",
+    "skip_to_content": "Skip to content"
+  },
+  "auth": {
+    "login": "Sign in",
+    "email": "Email",
+    "password": "Password",
+    "remember": "Remember me",
+    "sign_in": "Sign in",
+    "invalid": "Invalid credentials"
+  },
+  "nav": {
+    "home": "Dashboard",
+    "cases": "Cases",
+    "invoices": "Invoices",
+    "calendar": "Calendar",
+    "messages": "Messages",
+    "documents": "Documents",
+    "payments": "Payments",
+    "complaints": "Complaints",
+    "reports": "Reports",
+    "settings": "Settings",
+    "account": "Account",
+    "integrations": "Integrations",
+    "support": "Support"
+  },
+  "common": {
+    "search": "Search",
+    "coming_soon": "Coming soon",
+    "open": "Open",
+    "create": "Create",
+    "status": "Status",
+    "date": "Date",
+    "number": "Number"
+  },
+  "pages": {
+    "home": {
+      "welcome": "Welcome to the Customer Portal",
+      "subtitle": "Manage cases, invoices and communication in one place"
+    },
+    "cases": {
+      "title": "Your cases",
+      "id": "ID",
+      "subject": "Subject",
+      "updated": "Updated"
+    },
+    "placeholder": {
+      "headline": "{name} section",
+      "description": "This section is ready to be implemented. Tell us to generate full functionality."
+    }
+  }
+}
