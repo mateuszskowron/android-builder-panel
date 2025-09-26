@@ -12,7 +12,7 @@
       </div>
     </div>
     <nav class="px-2 py-2" aria-label="Main">
-      <a *ngFor="let p of plugins" [routerLink]="'/' + p.path" routerLinkActive="aria-[current=page]" class="sidebar-link" [attr.aria-label]="p.i18nKey | translate">
+      <a *ngFor="let p of plugins" [routerLink]="'/' + p.path" routerLinkActive="active" #rla="routerLinkActive" class="sidebar-link" [attr.aria-current]="rla.isActive ? 'page' : null" [attr.aria-label]="p.i18nKey | translate">
         <span class="material-symbols-outlined" aria-hidden="true">{{ p.icon }}</span>
         <span>{{ p.i18nKey | translate }}</span>
       </a>
