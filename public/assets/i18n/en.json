@@ -52,5 +52,45 @@
       "headline": "{name} section",
       "description": "This section is ready to be implemented. Tell us to generate full functionality."
     }
+  },
+  "invoices": {
+    "issue": "Issued",
+    "due": "Due",
+    "amount": "Amount",
+    "status": {
+      "paid": "Paid",
+      "pending": "Pending",
+      "overdue": "Overdue"
+    }
+  },
+  "documents": {
+    "name": "Name",
+    "type": "Type",
+    "size": "Size",
+    "modified": "Modified"
+  },
+  "payments": {
+    "method": "Method",
+    "method_card": "Card",
+    "method_transfer": "Bank transfer",
+    "method_blik": "BLIK",
+    "status_success": "Success",
+    "status_failed": "Failed",
+    "status_processing": "Processing"
+  },
+  "complaints": {
+    "created": "Created",
+    "status_new": "New",
+    "status_in_review": "In review",
+    "status_resolved": "Resolved"
+  },
+  "settings": {
+    "language": "Interface language",
+    "dark": "Dark mode",
+    "notifications": "Notifications",
+    "save": "Save settings"
+  },
+  "account": {
+    "memberSince": "Member since"
   }
 }
