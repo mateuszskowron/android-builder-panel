@@ -19,7 +19,7 @@ import { ComplaintsController } from '../../controllers/complaints.controller';
             <td mat-cell *matCellDef="let r" class="px-4 py-3">{{ r.id }}</td>
           </ng-container>
           <ng-container matColumnDef="subject">
-            <th mat-header-cell *matHeaderCellDef class="px-4 py-3 text-left text-sm font-medium">{{ 'cases.subject' | translate }}</th>
+            <th mat-header-cell *matHeaderCellDef class="px-4 py-3 text-left text-sm font-medium">{{ 'pages.cases.subject' | translate }}</th>
             <td mat-cell *matCellDef="let r" class="px-4 py-3">{{ r.subject }}</td>
           </ng-container>
           <ng-container matColumnDef="created">
