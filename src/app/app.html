@@ -1,4 +1,6 @@
 <a class="sr-only focus:not-sr-only focus:absolute focus:m-4 focus:p-2 focus:bg-white focus:shadow" href="#content">{{ 'app.skip_to_content' | translate }}</a>
+
+<ng-container *ngIf="auth.isAuthenticated(); else unauth">
 <div class="min-h-screen grid grid-cols-1 lg:grid-cols-[280px_1fr]">
   <!-- Sidebar -->
   <aside class="hidden lg:block border-r border-slate-200 bg-white">
@@ -62,3 +64,8 @@
     </footer>
   </div>
 </div>
+</ng-container>
+
+<ng-template #unauth>
+  <router-outlet></router-outlet>
+</ng-template>
