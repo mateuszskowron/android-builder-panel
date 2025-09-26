@@ -1,0 +1,56 @@
+{
+  "app": {
+    "title": "Panel Klienta",
+    "logout": "Wyloguj",
+    "language": "Język",
+    "skip_to_content": "Przejdź do treści"
+  },
+  "auth": {
+    "login": "Logowanie",
+    "email": "Email",
+    "password": "Hasło",
+    "remember": "Zapamiętaj mnie",
+    "sign_in": "Zaloguj się",
+    "invalid": "Nieprawidłowe dane logowania"
+  },
+  "nav": {
+    "home": "Pulpit",
+    "cases": "Sprawy",
+    "invoices": "Faktury",
+    "calendar": "Kalendarz",
+    "messages": "Wiadomości",
+    "documents": "Dokumenty",
+    "payments": "Płatności",
+    "complaints": "Reklamacje",
+    "reports": "Raporty",
+    "settings": "Ustawienia",
+    "account": "Konto",
+    "integrations": "Integracje",
+    "support": "Wsparcie"
+  },
+  "common": {
+    "search": "Szukaj",
+    "coming_soon": "Wkrótce",
+    "open": "Otwórz",
+    "create": "Utwórz",
+    "status": "Status",
+    "date": "Data",
+    "number": "Numer"
+  },
+  "pages": {
+    "home": {
+      "welcome": "Witaj w Panelu Klienta",
+      "subtitle": "Zarządzaj sprawami, fakturami i komunikacją w jednym miejscu"
+    },
+    "cases": {
+      "title": "Twoje sprawy",
+      "id": "ID",
+      "subject": "Temat",
+      "updated": "Aktualizacja"
+    },
+    "placeholder": {
+      "headline": "Sekcja {name}",
+      "description": "Ta sekcja jest przygotowana do wdrożenia. Napisz, abyśmy wygenerowali pełną funkcjonalność."
+    }
+  }
+}
